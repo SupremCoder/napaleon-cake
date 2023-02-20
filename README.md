@@ -1,2 +1,2 @@
-# napaleon_cake
+# Napaleon Cake
 Online e-commerce website
