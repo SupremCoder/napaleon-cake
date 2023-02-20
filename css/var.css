@@ -1,0 +1,37 @@
+.bgcover {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.bgcontain {
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.dcenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dsb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.centerpos {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.centerver {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.centerhor {
+  left: 0;
+  right: 0;
+  margin: auto;
+}
