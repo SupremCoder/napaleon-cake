@@ -135,8 +135,19 @@
   .swipexl .col-20 {
     width: auto;
   }
+  .swipexl .choice {
+    width: 250px;
+  }
   .swipexl .product__box {
     width: 300px;
+  }
+  .pslider {
+    max-width: unset;
+    margin-right: 0;
+  }
+  .product__form {
+    max-width: unset;
+    margin-left: 0;
   }
 }
 @media (max-width: 768px) {
