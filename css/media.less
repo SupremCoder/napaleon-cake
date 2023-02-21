@@ -137,9 +137,119 @@
     .col-md-12 {
         .fb(100%);
     }
+    .menu {
+        &__dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            padding: 5px;
+            box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            a.menu__child {
+                background: unset;
+            }
+        }
+        &__list {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid @grey;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            &:li {
+                position: relative;
+            }
+            a {
+                display: inline-block;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                background-color: #f5f5f5;
+                padding: 5px 10px;
+                &:after {
+                    margin-left: 5px;
+                }
+                &.active {
+                    background-color: @black;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .header__btn {
+        margin-left: 15px;
+    }
+    .welcome {
+        &__nav {
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.85);
+        }
+        &__title {
+            transform: translateX(15px);
+        }
+        &__social,
+        &__product,
+        &__navigation {
+            display: none;
+        }
+        &__sliders {
+            width: 100%;
+        }
+    }
+    .news {
+        &__col {
+            padding: 0 20px;
+        }
+    }
+    .banner {
+        &__top {
+            position: relative;
+            z-index: 2;
+        }
+        &__item {
+            height: auto;
+            &.pink {
+                padding-left: 40px;
+                .banner__title {
+                    font-size: 42px;
+                }
+            }
+        }
+        &__top {
+            position: relative;
+            z-index: 2;
+        }
+        &__img {
+            animation-name: rotatemd;
+            bottom: unset;
+            top: 0;
+            right: 20px;
+        }
+        &__time {
+            margin-top: 30px;
+        }
+    }
+    .footer__sub.border {
+        padding: 20px;
+    }
+    .blog__img {
+        height: 200px;
+    }
 }
 
-@media (max-width: 768px) {
+@keyframes rotatemd {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(180deg) scale(1.1);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+@media (max-width: 600px) {
     .col-sm-3 {
         .fb(25%);
     }
@@ -157,6 +267,9 @@
     }
     .col-sm-12 {
         .fb(100%);
+    }
+    .swipexl .product__box {
+        width: 200px;
     }
 }
 
