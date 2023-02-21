@@ -139,7 +139,7 @@
     width: 300px;
   }
 }
-@media (max-width: 786px) {
+@media (max-width: 768px) {
   .col-md-3 {
     width: 25%;
     padding: 0 10px;
