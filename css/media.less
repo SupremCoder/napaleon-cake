@@ -235,6 +235,21 @@
     .blog__img {
         height: 200px;
     }
+    .product__form .col-6 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .order {
+        flex-wrap: wrap;
+        &__left,
+        &__right {
+            width: 100%;
+            padding: 0;
+        }
+        &__right {
+            padding: 15px;
+        }
+    }
 }
 
 @keyframes rotatemd {
@@ -273,7 +288,34 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 425px) {
+    .header {
+        padding: 15px 0;
+        &__catalog {
+            font-size: 0;
+            margin-right: 0;
+        }
+        &__btn {
+            display: none;
+            &:nth-child(2) {
+                display: block;
+                margin-left: 0;
+            }
+        }
+        &__logo {
+            width: 60%;
+        }
+        &__left,
+        &__right {
+            width: 20%;
+        }
+    }
+    .welcome {
+        height: 380px;
+        &__title {
+            font-size: 22px;
+        }
+    }
     .col-xs-3 {
         .fb(25%);
     }
@@ -291,5 +333,35 @@
     }
     .col-xs-12 {
         .fb(100%);
+    }
+    .catalog {
+        &__filter {
+            flex-wrap: wrap;
+            position: sticky;
+            top: 0;
+            z-index: 3;
+            background-color: #fff;
+            padding: 10px;
+            justify-content: start;
+            gap: 10px;
+            margin-bottom: 0;
+            button {
+                margin: 0;
+                width: 48%;
+            }
+        }
+    }
+    .news {
+        &__col {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .banner.mini {
+        order: 2;
+    }
+    .footer__sub.border {
+        order: 1;
     }
 }
